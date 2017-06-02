@@ -1,0 +1,11 @@
+---
+version: '3'
+services:
+  blockdiag:
+    container_name: docker-blockdiag
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    volumes:
+      - ./blockdiag:/blockdiag
+    tty: true
